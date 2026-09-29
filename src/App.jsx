@@ -4,6 +4,7 @@ import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import Home from './pages/Home.jsx'
+import NotFound from './pages/NotFound.jsx'
 import Services from './pages/Services.jsx'
 
 function Layout() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
